@@ -13,8 +13,7 @@ public class CameraTest : MonoBehaviour {
 	[SerializeField] private Material WebCamMat;	//撮影中
 	[SerializeField] private Material ResultMat;	//結果画像
 	
-	WebCamTexture webcamTexture;
-	private WebCamTexture m_webCamTexture = null;
+	private WebCamTexture webcamTexture = null;
 	private int id = 0;
 
 	public GameObject canv;
@@ -41,15 +40,15 @@ public class CameraTest : MonoBehaviour {
 	void Update() {
 		if (Input.GetKeyDown (KeyCode.Space)) {
 			if ( webcamTexture != null ) {
-				//SaveToPNGFile( webcamTexture.GetPixels(), Application.dataPath + "/../SavedScreen" + id.ToString() + ".png" );
-				SaveToPNGFile( webcamTexture.GetPixels(), Application.dataPath + "/../SavedScreen.png" );
-				//id++;
+				SaveToPNGFile( webcamTexture.GetPixels(), Application.dataPath + "/../SavedScreen" + id.ToString() + ".png" );
+				//SaveToPNGFile( webcamTexture.GetPixels(), Application.dataPath + "/../SavedScreen.png" );
+				id++;
 			}
 		}//結果画像をmaterialに表示
 		else if (Input.GetKeyDown(KeyCode.A))
 		{
-			//Texture tex = ReadTexture(Application.dataPath + "/../SavedScreen" + id.ToString() + ".png", m_width, m_height);
-			Texture tex = ReadTexture(Application.dataPath + "/../SavedScreen.png", m_width, m_height);
+			Texture tex = ReadTexture(Application.dataPath + "/../SavedScreen" + (id-1).ToString() + ".png", m_width, m_height);
+			//Texture tex = ReadTexture(Application.dataPath + "/../SavedScreen.png", m_width, m_height);
 			ResultMat.mainTexture = tex;
 			canv.GetComponent < RawImage >().texture = ResultMat.mainTexture;
 		}
@@ -85,27 +84,4 @@ public class CameraTest : MonoBehaviour {
             
 		return textute;
 	}
-//	private IEnumerator Star()
-//	{
-//		if( WebCamTexture.devices.Length == 0 )
-//		{
-//			Debug.LogFormat( "No Cam is Connectted" );
-//			yield break;	
-//		}
-//		Debug.Log("Can Use Camera");
-//
-//		yield return Application.RequestUserAuthorization( UserAuthorization.WebCam );
-//		if( !Application.HasUserAuthorization( UserAuthorization.WebCam ) )
-//		{
-//			Debug.LogFormat( "Don't use Cam" );
-//			yield break;
-//		}
-//		
-//		Debug.Log("Cam Num :" + WebCamTexture.devices.Length);
-//		Debug.Log("CamDev[0].name :" + WebCamTexture.devices[0].name);
-//		//WebCamDevice userCameraDevice = WebCamTexture.devices[ 0 ];
-//		m_webCamTexture = new WebCamTexture( WebCamTexture.devices[ 0 ].name, m_width, m_height );
-//		m_displayUI.texture = m_webCamTexture;
-//		m_webCamTexture.Play();
-//	}
 }
