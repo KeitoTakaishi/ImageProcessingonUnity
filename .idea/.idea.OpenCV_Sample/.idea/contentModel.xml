@@ -556,7 +556,6 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="CameraTest.cs" t="Include" />
-          <e p="WebCam.cs" t="Include" />
         </e>
       </e>
       <e p="Library" t="ExcludeRecursive" />
