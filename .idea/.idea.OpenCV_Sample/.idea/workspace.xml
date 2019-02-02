@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a88f27a9-12a7-42ba-af47-2a407675c52e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.OpenCV_Sample/.idea/contentModel.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.OpenCV_Sample/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.OpenCV_Sample/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.OpenCV_Sample/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.OpenCV_Sample/riderModule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Camera.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Camera.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OpenCV+Unity/Demo/Grayscale/GrayscaleScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/OpenCV+Unity/Demo/Grayscale/GrayscaleScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Save.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Save.mat.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/WebCamTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/WebCamTest.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WebCam.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WebCam.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,60 +19,90 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="CameraTest.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/CameraTest.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-              <folding>
-                <marker date="1549067585296" expanded="true" signature="6:114" ph="..." />
-                <marker date="1549067585296" expanded="true" signature="156:1132" ph="{...}" />
-                <marker date="1549067585296" expanded="true" signature="410:1130" ph="{...}" />
-                <marker date="1549067585296" expanded="true" signature="455:529" ph="{...}" />
-                <marker date="1549067585296" expanded="true" signature="712:775" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WebCam.cs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/WebCam.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="41" column="78" lean-forward="true" selection-start-line="41" selection-start-column="78" selection-end-line="41" selection-end-column="78" />
-              <folding>
-                <marker date="1549069463886" expanded="true" signature="6:80" ph="..." />
-                <marker date="1549069463886" expanded="true" signature="118:2370" ph="{...}" />
-                <marker date="1549069463886" expanded="true" signature="291:857" ph="{...}" />
-                <marker date="1549069463886" expanded="true" signature="430:851" ph="{...}" />
-                <marker date="1549069463886" expanded="true" signature="590:841" ph="{...}" />
-                <marker date="1549069463886" expanded="true" signature="878:1347" ph="{...}" />
-                <marker date="1549069463886" expanded="true" signature="926:1149" ph="{...}" />
-                <marker date="1549069463886" expanded="true" signature="969:1139" ph="{...}" />
-                <marker date="1549069463886" expanded="true" signature="1186:1341" ph="{...}" />
-                <marker date="1549069463886" expanded="true" signature="1409:1777" ph="{...}" />
-                <marker date="1549069463886" expanded="true" signature="1837:2104" ph="{...}" />
-                <marker date="1549069463886" expanded="true" signature="2165:2363" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.725">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="CameraTest.cs" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Assets/Scripts/CameraTest.cs">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="364">
+                  <caret line="53" column="56" selection-start-line="53" selection-start-column="56" selection-end-line="53" selection-end-column="56" />
+                  <folding>
+                    <marker date="1549088823122" expanded="true" signature="6:131" ph="..." />
+                    <marker date="1549088823122" expanded="true" signature="173:3303" ph="{...}" />
+                    <marker date="1549088823122" expanded="true" signature="549:945" ph="{...}" />
+                    <marker date="1549088823122" expanded="true" signature="645:942" ph="{...}" />
+                    <marker date="1549088823122" expanded="true" signature="747:938" ph="{...}" />
+                    <marker date="1549088823122" expanded="true" signature="963:1646" ph="{...}" />
+                    <marker date="1549088823122" expanded="true" signature="1005:1272" ph="{...}" />
+                    <marker date="1549088823122" expanded="true" signature="1039:1268" ph="{...}" />
+                    <marker date="1549088823122" expanded="true" signature="1330:1643" ph="{...}" />
+                    <marker date="1549088823122" expanded="true" signature="1721:2004" ph="{...}" />
+                    <marker date="1549088823122" expanded="true" signature="2047:2278" ph="{...}" />
+                    <marker date="1549088823122" expanded="true" signature="2337:2513" ph="{...}" />
+                    <marker date="1549088823122" expanded="true" signature="2514:3301" ph="/* private IEnumerator Star() ... */" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="WebCam.cs" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Assets/Scripts/WebCam.cs">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="465">
+                  <caret line="73" column="43" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="43" />
+                  <folding>
+                    <marker date="1549086228851" expanded="true" signature="10:96" ph="..." />
+                    <marker date="1549086228851" expanded="true" signature="142:2742" ph="{...}" />
+                    <marker date="1549086228851" expanded="true" signature="351:985" ph="{...}" />
+                    <marker date="1549086228851" expanded="true" signature="506:975" ph="{...}" />
+                    <marker date="1549086228851" expanded="true" signature="686:961" ph="{...}" />
+                    <marker date="1549086228851" expanded="true" signature="1048:1547" ph="{...}" />
+                    <marker date="1549086228851" expanded="true" signature="1100:1345" ph="{...}" />
+                    <marker date="1549086228851" expanded="true" signature="1147:1331" ph="{...}" />
+                    <marker date="1549086228851" expanded="true" signature="1382:1537" ph="{...}" />
+                    <marker date="1549086228851" expanded="true" signature="1617:2047" ph="{...}" />
+                    <marker date="1549086228851" expanded="true" signature="2065:2093" ph="/* ReadTexture ... */" />
+                    <marker date="1549086228851" expanded="true" signature="2133:2428" ph="{...}" />
+                    <marker date="1549086228851" expanded="true" signature="2497:2727" ph="{...}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>m_displayUI</find>
+      <find>ReadTexture</find>
+      <find>ReadPngFile</find>
+      <find>WebCamMat</find>
+      <find>resultMat</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/OpenCV+Unity/Demo/Identifiy_Contours_by_Shape/ContoursByShapeScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/WebCam.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/OpenCV+Unity/Demo/Grayscale/GrayscaleScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/OpenCV+Unity/Demo/Tracking/TrackingScript.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/CameraTest.cs" />
+        <option value="$PROJECT_DIR$/Assets/OpenCV+Unity/Demo/Grayscale/GrayscaleScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/WebCam.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CameraTest.cs" />
       </list>
     </option>
   </component>
@@ -81,10 +113,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-195" />
-    <option name="y" value="23" />
-    <option name="width" value="1284" />
-    <option name="height" value="836" />
+    <option name="y" value="41" />
+    <option name="width" value="1419" />
+    <option name="height" value="823" />
   </component>
   <component name="ProjectView">
     <navigator currentView="UnityExplorer" proportions="" version="1">
@@ -142,12 +173,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1549066536132</updated>
-      <workItem from="1549066543590" duration="2774000" />
+      <workItem from="1549066543590" duration="10488000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2774000" />
+    <option name="totallyTimeSpent" value="10488000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -159,7 +190,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-195" y="23" width="1284" height="836" extended-state="0" />
+    <frame x="0" y="41" width="1419" height="823" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -170,7 +201,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.147343" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.07044299" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Unity" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -194,38 +225,120 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="4" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CameraTest.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/OpenCV+Unity/Demo/Identifiy_Contours_by_Shape/ContoursByShapeScript.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        <state relative-caret-position="-1">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
           <folding>
-            <marker date="1549067585296" expanded="true" signature="6:114" ph="..." />
-            <marker date="1549067585296" expanded="true" signature="156:1132" ph="{...}" />
-            <marker date="1549067585296" expanded="true" signature="410:1130" ph="{...}" />
-            <marker date="1549067585296" expanded="true" signature="455:529" ph="{...}" />
-            <marker date="1549067585296" expanded="true" signature="712:775" ph="{...}" />
+            <marker date="1511120303000" expanded="true" signature="26:2163" ph="{...}" />
+            <marker date="1511120303000" expanded="true" signature="36:118" ph="..." />
+            <marker date="1511120303000" expanded="true" signature="172:2161" ph="{...}" />
+            <marker date="1511120303000" expanded="true" signature="257:2094" ph="{...}" />
+            <marker date="1511120303000" expanded="true" signature="790:1916" ph="{...}" />
+            <marker date="1511120303000" expanded="true" signature="1003:1073" ph="{...}" />
+            <marker date="1511120303000" expanded="true" signature="1107:1369" ph="{...}" />
+            <marker date="1511120303000" expanded="true" signature="1207:1281" ph="{...}" />
+            <marker date="1511120303000" expanded="true" signature="1404:1474" ph="{...}" />
+            <marker date="1511120303000" expanded="true" signature="1509:1581" ph="{...}" />
+            <marker date="1511120303000" expanded="true" signature="1610:1911" ph="{...}" />
+            <marker date="1511120303000" expanded="true" signature="2150:2156" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/OpenCV+Unity/Demo/Tracking/TrackingScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-671">
+          <caret line="83" column="42" selection-start-line="83" selection-start-column="42" selection-end-line="83" selection-end-column="42" />
+          <folding>
+            <marker date="1511120427000" expanded="true" signature="26:5154" ph="{...}" />
+            <marker date="1511120427000" expanded="true" signature="36:147" ph="..." />
+            <marker date="1511120427000" expanded="true" signature="150:208" ph="/// Object tracking handler ... " />
+            <marker date="1511120427000" expanded="true" signature="310:5152" ph="{...}" />
+            <marker date="1511120427000" expanded="true" signature="600:651" ph="/// Initialization ... " />
+            <marker date="1511120427000" expanded="true" signature="685:740" ph="{...}" />
+            <marker date="1511120427000" expanded="true" signature="744:929" ph="/// Converts point from screen space into the image space ... " />
+            <marker date="1511120427000" expanded="true" signature="985:1566" ph="{...}" />
+            <marker date="1511120427000" expanded="true" signature="1570:2084" ph="/// Our main function to process the tracking: ... " />
+            <marker date="1511120427000" expanded="true" signature="2168:4422" ph="{...}" />
+            <marker date="1511120427000" expanded="true" signature="2758:3966" ph="{...}" />
+            <marker date="1511120427000" expanded="true" signature="3055:3568" ph="{...}" />
+            <marker date="1511120427000" expanded="true" signature="3233:3562" ph="{...}" />
+            <marker date="1511120427000" expanded="true" signature="3701:3786" ph="{...}" />
+            <marker date="1511120427000" expanded="true" signature="4214:4355" ph="/* result, passing output texture as parameter allows to re-use it's buffer ... */" />
+            <marker date="1511120427000" expanded="true" signature="4426:4483" ph="/// Frees object tracker ... " />
+            <marker date="1511120427000" expanded="true" signature="4515:4643" ph="{...}" />
+            <marker date="1511120427000" expanded="true" signature="4543:4639" ph="{...}" />
+            <marker date="1511120427000" expanded="true" signature="4647:4799" ph="/// Dragging handlers, drops current tracker (as we'll get new area of interest) ... " />
+            <marker date="1511120427000" expanded="true" signature="4853:4939" ph="{...}" />
+            <marker date="1511120427000" expanded="true" signature="4989:5031" ph="{...}" />
+            <marker date="1511120427000" expanded="true" signature="5084:5149" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/OpenCV+Unity/Demo/Grayscale/GrayscaleScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+          <folding>
+            <marker date="1549072118266" expanded="true" signature="0:48" ph="/* ColorConversionCodeクラスによって変換できる ... */" />
+            <marker date="1549072118266" expanded="true" signature="76:848" ph="{...}" />
+            <marker date="1549072118266" expanded="true" signature="86:168" ph="..." />
+            <marker date="1549072118266" expanded="true" signature="216:846" ph="{...}" />
+            <marker date="1549072118266" expanded="true" signature="297:779" ph="{...}" />
+            <marker date="1549072118266" expanded="true" signature="668:775" ph="/* Renderer renderer = gameObject.GetComponent&lt;Renderer&gt; (); ... */" />
+            <marker date="1549072118266" expanded="true" signature="835:841" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/WebCam.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="41" column="78" lean-forward="true" selection-start-line="41" selection-start-column="78" selection-end-line="41" selection-end-column="78" />
+        <state relative-caret-position="465">
+          <caret line="73" column="43" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="43" />
           <folding>
-            <marker date="1549069463886" expanded="true" signature="6:80" ph="..." />
-            <marker date="1549069463886" expanded="true" signature="118:2370" ph="{...}" />
-            <marker date="1549069463886" expanded="true" signature="291:857" ph="{...}" />
-            <marker date="1549069463886" expanded="true" signature="430:851" ph="{...}" />
-            <marker date="1549069463886" expanded="true" signature="590:841" ph="{...}" />
-            <marker date="1549069463886" expanded="true" signature="878:1347" ph="{...}" />
-            <marker date="1549069463886" expanded="true" signature="926:1149" ph="{...}" />
-            <marker date="1549069463886" expanded="true" signature="969:1139" ph="{...}" />
-            <marker date="1549069463886" expanded="true" signature="1186:1341" ph="{...}" />
-            <marker date="1549069463886" expanded="true" signature="1409:1777" ph="{...}" />
-            <marker date="1549069463886" expanded="true" signature="1837:2104" ph="{...}" />
-            <marker date="1549069463886" expanded="true" signature="2165:2363" ph="{...}" />
+            <marker date="1549086228851" expanded="true" signature="10:96" ph="..." />
+            <marker date="1549086228851" expanded="true" signature="142:2742" ph="{...}" />
+            <marker date="1549086228851" expanded="true" signature="351:985" ph="{...}" />
+            <marker date="1549086228851" expanded="true" signature="506:975" ph="{...}" />
+            <marker date="1549086228851" expanded="true" signature="686:961" ph="{...}" />
+            <marker date="1549086228851" expanded="true" signature="1048:1547" ph="{...}" />
+            <marker date="1549086228851" expanded="true" signature="1100:1345" ph="{...}" />
+            <marker date="1549086228851" expanded="true" signature="1147:1331" ph="{...}" />
+            <marker date="1549086228851" expanded="true" signature="1382:1537" ph="{...}" />
+            <marker date="1549086228851" expanded="true" signature="1617:2047" ph="{...}" />
+            <marker date="1549086228851" expanded="true" signature="2065:2093" ph="/* ReadTexture ... */" />
+            <marker date="1549086228851" expanded="true" signature="2133:2428" ph="{...}" />
+            <marker date="1549086228851" expanded="true" signature="2497:2727" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CameraTest.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="53" column="56" selection-start-line="53" selection-start-column="56" selection-end-line="53" selection-end-column="56" />
+          <folding>
+            <marker date="1549088823122" expanded="true" signature="6:131" ph="..." />
+            <marker date="1549088823122" expanded="true" signature="173:3303" ph="{...}" />
+            <marker date="1549088823122" expanded="true" signature="549:945" ph="{...}" />
+            <marker date="1549088823122" expanded="true" signature="645:942" ph="{...}" />
+            <marker date="1549088823122" expanded="true" signature="747:938" ph="{...}" />
+            <marker date="1549088823122" expanded="true" signature="963:1646" ph="{...}" />
+            <marker date="1549088823122" expanded="true" signature="1005:1272" ph="{...}" />
+            <marker date="1549088823122" expanded="true" signature="1039:1268" ph="{...}" />
+            <marker date="1549088823122" expanded="true" signature="1330:1643" ph="{...}" />
+            <marker date="1549088823122" expanded="true" signature="1721:2004" ph="{...}" />
+            <marker date="1549088823122" expanded="true" signature="2047:2278" ph="{...}" />
+            <marker date="1549088823122" expanded="true" signature="2337:2513" ph="{...}" />
+            <marker date="1549088823122" expanded="true" signature="2514:3301" ph="/* private IEnumerator Star() ... */" />
           </folding>
         </state>
       </provider>

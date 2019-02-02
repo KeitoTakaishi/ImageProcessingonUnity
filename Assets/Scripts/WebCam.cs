@@ -37,11 +37,10 @@
             if (Input.GetKeyDown (KeyCode.Space)) {
                 if ( webcamTexture != null ) {
                     Debug.Log(Application.dataPath);
-                    SaveToPNGFile( webcamTexture.GetPixels(), Application.dataPath + "/../SavedScreen.png" );
+                    //SaveToPNGFile( webcamTexture.GetPixels(), Application.dataPath + "/../SavedScreen.png" );
                 }
-            }else if (Input.GetKeyDown(KeyCode.A))
-            {
-                Texture t = ReadTexture(Application.dataPath + "/../SavedScreen.png",Width, Height);
+            }else if (Input.GetKeyDown(KeyCode.A)){
+                Texture t = ReadTexture(Application.dataPath + "/../SavedScreen.png", Width, Height);
                 save.mainTexture = t;
             }
         }
@@ -60,7 +59,7 @@
         }
         
         //ReadTexture
-        
+        //結果表示
         byte[] ReadPngFile(string path)
         {
             FileStream fileStream = new FileStream(path, FileMode.Open, FileAccess.Read);

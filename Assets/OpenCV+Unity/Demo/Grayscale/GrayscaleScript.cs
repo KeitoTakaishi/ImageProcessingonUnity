@@ -1,4 +1,7 @@
-﻿namespace OpenCvSharp.Demo
+﻿//ColorConversionCodeクラスによって変換できる
+//MatToTexture
+
+namespace OpenCvSharp.Demo
 {
 	using UnityEngine;
 	using System.Collections;
@@ -14,7 +17,11 @@
 
 			Mat mat = Unity.TextureToMat (this.texture);
 			Mat grayMat = new Mat ();
+			
 			Cv2.CvtColor (mat, grayMat, ColorConversionCodes.BGR2GRAY); 
+			
+			//Cv2.CvtColor(mat, grayMat, ColorConversionCodes.BGR2HSV_FULL);
+			
 			Texture2D texture = Unity.MatToTexture (grayMat);
 
 			RawImage rawImage = gameObject.GetComponent<RawImage> ();
